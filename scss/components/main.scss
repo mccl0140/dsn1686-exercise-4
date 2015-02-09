@@ -17,6 +17,7 @@ a.menu-link {
 		    display: block;
 		    padding: 1em;
 		}
+
 		.menu, .menu > ul ul {
 			clear: both;
 			-webkit-transition: all .5s ease-in-out;
@@ -25,11 +26,13 @@ a.menu-link {
 			-o-transition: all .5s ease-in-out;
 			transition: all .5s ease-in-out;
 		}
+
 		.js .menu, .js .menu > ul ul {
 			overflow: hidden;
 			max-height: 0;
 			background: $blue;
 		}
+
 		.menu.active, .js .menu > ul ul.active {
 			max-height: 55em;
 		}
@@ -40,6 +43,7 @@ a.menu-link {
 			padding: 0.8em;
 			position: relative;
 		}
+
 		.menu li.has-subnav > a:after {
 			content: '+';
 			position: absolute;
@@ -49,6 +53,7 @@ a.menu-link {
 			font-size: 1.5em;
 			padding: 0.25em 0.5em;
 		}
+
 		.menu li.has-subnav > a.active:after {
 			content: "-";
 		}
@@ -60,20 +65,25 @@ a.menu-link {
 			.pattern {
 				overflow: visible;
 			}
+
 			a.menu-link {
 			   display: none;
 			}
+
 			.js .menu, .js .menu > ul ul {
 				max-height: none;
 				overflow: visible;
 			}
+
 			.js .menu > ul ul {
 				background: $teal;
 				display: none;
 			}
+
 			.js .menu > ul li:hover > ul {
 				display: block;
 			}
+
 			.menu ul {
 				margin: 0 0 0 -0.25em;
 			}
@@ -81,30 +91,37 @@ a.menu-link {
 			.menu li.has-subnav > a {
 				padding-right: 2em;
 			}
+
 			.menu li.has-subnav > a:after {
 				content: ">";
 				font-size: 1em;
 				padding: 0.8em 0.5em;
 			}
+
 			.menu .level-1 > li.has-subnav > a:after {
 				content: "▼";
 			}
+
 			.menu > ul li {
 				margin: 0 0.25em;
 			}
+
 			.menu > ul > li {
 				display: inline-block;
 				position: relative;
 			}
+
 			.menu > ul ul {
 				position: absolute;
 				top: 0;
 				left: 12em;
 				width: 12em;
 			}
+
 			.menu > ul ul li {
 				position: relative;
 			}
+
 			.menu > ul ul.level-2 {
 				top: 3em;
 				left: 0;
