@@ -1,30 +1,19 @@
 $(document).ready(function() {
-  
-  // On click, remove class on active element, add it to the new one
-  
-  $('header nav a').click(function(e) {
-    
-    $('header nav a.active').removeClass('active');
-    $(this).addClass('active');
-    
-    // Scroll to anchor
-    
-    $('html,body').animate({scrollTop: $($(this).attr('href')).offset().top - 70},'slow');
-    
-    e.preventDefault();
-    return false;
-    
-  });
-  
-  // On scroll, remove class on active element and add it to the new one
-  
-  $(document).scroll(function() {
-     
-     var position = Math.floor($(this).scrollTop() / 800) + 1;
-    
-     $('header nav a.active').removeClass('active');
-     $('header nav a.link-' + position).addClass('active');
-    
-  });
-  
-});
+  	  $('body').addClass('js');
+		  var $menu = $('#menu'),
+		  	  $menulink = $('.menu-link'),
+		  	  $menuTrigger = $('.has-subnav > a');
+		
+		$menulink.click(function(e) {
+			e.preventDefault();
+			$menulink.toggleClass('active');
+			$menu.toggleClass('active');
+		});
+		
+		$menuTrigger.click(function(e) {
+			e.preventDefault();
+			var $this = $(this);
+			$this.toggleClass('active').next('ul').toggleClass('active');
+		});
+		
+		});

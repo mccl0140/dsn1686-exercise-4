@@ -5,7 +5,11 @@
 
   <meta charset="UTF-8">
 
-  <title>CodePen - Fancy Mobile Flat Navigation</title>
+  <title>CodePen - Multi-Toggle Navigation</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel='stylesheet prefetch' href='http://bradfrost.github.com/this-is-responsive/styles.css'>
 
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
 
@@ -13,42 +17,368 @@
 
 <body>
 
-  <header>
-  <h1>Acme</h1>
-  <nav role='navigation'>
-    <ul>
-      <li><a class="link-1 entypo-home active" href="#home"></a></li>
-       <li><a class="link-2 entypo-picture" href="#clients"></a></li>
-      <li><a class="link-3 entypo-user" href="#about"></a></li>
-      <li><a class="link-4 entypo-mail" href="#contact-us"></a></li>
-    </ul>
-  </nav>  
-</header>
+  <!--Pattern HTML-->
+  <div id="pattern" class="pattern">
+    <!--Begin Pattern HTML-->
+		<a href="#menu" class="menu-link">Menu</a>
+		<nav id="menu" class="menu" role="navigation">
+			<ul class="level-1">
+				<!--Parent #1-->
+				<li class="has-subnav">
+					<a href="#">Parent #1</a>
+					<ul class="level-2">
+						<li class="has-subnav">
+							<a href="#">Child #1</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #2</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #3</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #4</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+					</ul>
+				</li>
 
-<section id="home">
-  <h2>Home</h2>
-  <div class="illustration"></div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis diam id nulla dictum rhoncus. Praesent interdum, diam sit amet pretium fermentum, libero lacus porttitor justo, vitae molestie velit justo et est. Sed ut urna aliquet leo ornare viverra eu a est. Vivamus dignissim nisl sed metus hendrerit scelerisque. Nam facilisis velit id velit congue vitae venenatis orci tempor. Nam vel est id orci feugiat rhoncus. Duis tempus lectus non urna aliquam mollis. In at lacinia eros. Nam sed lorem est.<br/><br/>
+				<!--Parent #2-->
+				<li class="has-subnav">
+					<a href="#">Parent #2</a>
+					<ul class="level-2">
+						<li class="has-subnav">
+							<a href="#">Child #1</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #2</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #3</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #4</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+					</ul>
+				</li>
 
-Nullam condimentum felis eu quam molestie sit amet dignissim justo tempus. Mauris ultricies massa aliquam lorem viverra in tristique purus fermentum. Mauris dictum erat eu ipsum rhoncus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id orci ante. <br/><br/>Fusce ut risus a ligula scelerisque fermentum porttitor a tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sodales lobortis neque, id convallis purus pharetra a. Nullam aliquam tristique urna vel molestie. Vestibulum eu nisl magna.</p>
-</section>
-<section id="clients">
-  <h2>Clients</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est id orci feugiat rhoncus. Duis tempus lectus non urna aliquam mollis. In at lacinia eros. Nam sed lorem est. Vestibulum placerat lorem in massa facilisis et mattis lacus mollis. Morbi nec dui ac magna dignissim euismod.Nullam condimentum felis eu quam molestie sit amet dignissim justo tempus. Mauris ultricies massa aliquam lorem viverra in tristique purus fermentum. Mauris dictum erat eu ipsum rhoncus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id orci ante. <br/><br/>Fusce ut risus a ligula scelerisque fermentum porttitor a tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sodales lobortis neque, id convallis purus pharetra a. Nullam aliquam tristique urna vel molestie. Vestibulum eu nisl magna. Suspendisse justo sem, dapibus eu dapibus vitae, mollis nec tellus. Duis volutpat ligula metus. <br/><br/>Vivamus placerat, purus et aliquet vehicula, leo odio tempor dui, quis interdum augue leo quis quam. Maecenas facilisis viverra risus, id interdum sem elementum nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-</section>
-<section id="about">
-  <h2>About</h2>
-  <div class="illustration"></div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est id orci feugiat rhoncus. Duis tempus lectus non urna aliquam mollis. In at lacinia eros. Nam sed lorem est. Vestibulum placerat lorem in massa facilisis et mattis lacus mollis. Morbi nec dui ac magna dignissim euismod.<br/><br/>
+				<!--Parent #3-->
+				<li class="has-subnav">
+					<a href="#">Parent #3</a>
+					<ul class="level-2">
+						<li class="has-subnav">
+							<a href="#">Child #1</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #2</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #3</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #4</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+					</ul>
+				</li>
 
-Nullam condimentum felis eu quam molestie sit amet dignissim justo tempus. Mauris ultricies massa aliquam lorem viverra in tristique purus fermentum. Mauris dictum erat eu ipsum rhoncus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id orci ante. <br/><br/>Nullam aliquam tristique urna vel molestie. Vestibulum eu nisl magna. Suspendisse justo sem, dapibus eu dapibus vitae, mollis nec tellus. Duis volutpat ligula metus. <br/><br/>Vivamus placerat, purus et aliquet vehicula, leo odio tempor dui, quis interdum augue leo quis quam. Maecenas facilisis viverra risus, id interdum sem elementum nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vestibulum placerat lorem in massa facilisis et mattis lacus mollis. Morbi nec dui ac magna dignissim euismod.Nullam condimentum felis eu quam molestie sit amet dignissim justo tempus. Mauris ultricies massa aliquam lorem viverra in tristique purus fermentum. </p>
-</section>
-<section id="contact-us">
-  <h2>Contact Us</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis diam id nulla dictum rhoncus. Praesent interdum, diam sit amet pretium fermentum, libero lacus porttitor justo, vitae molestie velit justo et est. Sed ut urna aliquet leo ornare viverra eu a est. Vivamus dignissim nisl sed metus hendrerit scelerisque. Nam facilisis velit id velit congue vitae venenatis orci tempor. Nam vel est id orci feugiat rhoncus. Duis tempus lectus non urna aliquam mollis. In at lacinia eros. Nam sed lorem est. Vestibulum placerat lorem in massa facilisis et mattis lacus mollis. Morbi nec dui ac magna dignissim euismod.<br/><br/>
+				<!--Parent #4-->
+				<li class="has-subnav">
+					<a href="#">Parent #4</a>
+					<ul class="level-2">
+						<li class="has-subnav">
+							<a href="#">Child #1</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #2</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #3</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #4</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+					</ul>
+				</li>
 
-Nullam condimentum felis eu quam molestie sit amet dignissim justo tempus. Mauris ultricies massa aliquam lorem viverra in tristique purus fermentum. Mauris dictum erat eu ipsum rhoncus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id orci ante. <br/><br/>Fusce ut risus a ligula scelerisque fermentum porttitor a tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sodales lobortis neque, id convallis purus pharetra a. Nullam aliquam tristique urna vel molestie. Vestibulum eu nisl magna. Suspendisse justo sem, dapibus eu dapibus vitae, mollis nec tellus. Duis volutpat ligula metus. Vivamus placerat, purus et aliquet vehicula, leo odio tempor dui, quis interdum augue leo quis quam. Maecenas facilisis viverra risus, id interdum sem elementum nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-</section>
+				<!--Parent #5-->
+				<li class="has-subnav">
+					<a href="#">Parent #5</a>
+					<ul class="level-2">
+						<li class="has-subnav">
+							<a href="#">Child #1</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #2</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #3</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+						<li class="has-subnav">
+							<a href="#">Child #4</a>
+							<ul class="level-3">
+								<li><a href="#">Grandchild #1</a></li>
+								<li><a href="#">Grandchild #2</a></li>
+								<li class="has-subnav">
+									<a href="#">Grandchild #3</a>
+									<ul class="level-4">
+										<li><a href="#">Great-Grandchild #1</a></li>
+										<li><a href="#">Great-Grandchild #2</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</nav>
+	</div>
+	<!--End Pattern HTML-->
+
+	<div class="container">	
+		<section class="pattern-description">
+			<h1>Multi-Toggle Navigation</h1>
+
+      <p>From <a href="http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/">Complex Navigation Patterns for Responsive Design</a>:</p>
+The multi-toggle is basically just nested accordions. The user taps on the parent category to reveal children categories underneath. Once enough screen real estate becomes available, they convert to the usual <a href="http://devsnippets.com/article/reviews/10-brilliant-multi-level-navigation-menu-techniques.html">multi-level dropdown</a> we&#8217;re used to seeing. </p>
+<p>Quick tip: use one of two emerging icons: the plus sign (+) or downward caret (▼ &amp;#9660;) to let users know there&#8217;s more content. </p>
+<h3>Pros</h3>
+<ul>
+<li><strong>Scannable</strong> &#8211; users can quickly scan parent categories before making a decision to go to the next level.</li>
+<li><strong>Scalable</strong> &#8211; Got a menu that&#8217;s 17 levels deep? This solution can technically handle it with ease (but please don&#8217;t do that)</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li><strong>Not terribly sexy</strong> &#8211; tapping through a bunch of Russian nesting doll navigation levels isn&#8217;t the most elegant thing in the world, but then again I suppose you could say that about any multi-level navigation solution.</li>
+<li><strong>Potential JS requirement</strong> &#8211; I say &#8216;potential&#8217; just because most accordion-style interactions I&#8217;ve seen uses JS to make the interaction happen. However, the brilliant <a href="http://twitter.com/aarongustafson">Aaron Gustafson</a> demonstrated that you can <a href="http://www.netmagazine.com/tutorials/build-smart-mobile-navigation-without-hacks">accomplish this effect</a> using CSS&#8217;s <code>:target</code> pseudo-class. Pretty neat! Also, a JS requirement itself isn&#8217;t necessarily a con, just make sure the navigation is accessible for users with poor/no JS support.</li>
+</ul>
+<h3>Resources</h3>
+<ul>
+<li><a href="http://www.netmagazine.com/tutorials/build-smart-mobile-navigation-without-hacks">Build a smart mobile navigation without hacks</a></li>
+<li><a href="http://jsfiddle.net/leaverou/zwvNY/">Animate using min-height</a> by <a href="https://twitter.com/leaverou">Lea Verou</a> &#8211; This technique is insanely badass. I use it for all my height-animating needs, including accordions.</li>
+<li><a href="http://jqueryui.com/demos/accordion/">jQuery Accordion</a></li>
+</ul>
+<h3>In the Wild</h3>
+<ul>
+<li><a href="http://www.barackobama.com/">Barack Obama&#8217;s</a> (redesigned) site in conjunction with the <a href="http://bradfrostweb.com/blog/web/responsive-nav-patterns/#footer-anchor">footer anchor</a> pattern. </li>
+</ul>
+					</section>
+		<footer role="contentinfo">   
+			<div>
+				<nav id="menu">
+					<a href="http://bradfrost.github.com/this-is-responsive/patterns.html">&larr;More Responsive Patterns</a>
+				</nav>
+			</div>
+		</footer>
+	</div>
 
   <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
 
