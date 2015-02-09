@@ -7,7 +7,11 @@ h1{
 	font-family: serif;
 }
 
-
+img {
+	display: block;
+	width: auto;
+	max-width: 100%;
+}
 
 
 /*MOBILE*/
@@ -20,11 +24,11 @@ a.menu-link {
 
 		.menu, .menu > ul ul {
 			clear: both;
-			-webkit-transition: all .5s ease-in-out;
-			-moz-transition: all .5s ease-in-out;
-			-ms-transition: all .5s ease-in-out;
-			-o-transition: all .5s ease-in-out;
-			transition: all .5s ease-in-out;
+			-webkit-transition: $transition;
+			-moz-transition: $transition;
+			-ms-transition: $transition;
+			-o-transition: $transition;
+			transition: $transition;
 		}
 
 		.js .menu, .js .menu > ul ul {
