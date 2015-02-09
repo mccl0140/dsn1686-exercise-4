@@ -1,3 +1,14 @@
+body{
+	background-color: #ccc;
+	font-family: $raleway;
+}
+
+h1{
+	font-family: $righteous;
+}
+
+/*MOBILE*/
+
 a.menu-link {
   	    float: right;
 		    display: block;
@@ -42,6 +53,8 @@ a.menu-link {
 			content: "-";
 		}
 
+
+/*DESKTOP*/
 
 		@media screen and (min-width: 48.25em) {
 			.pattern {
